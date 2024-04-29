@@ -1,0 +1,10 @@
+#menu {
+    background-color: black;
+}
+.principal {
+    background-color: aqua;
+}
+body {
+    margin: 0;
+    display: grid;
+}
