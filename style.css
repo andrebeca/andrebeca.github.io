@@ -1,10 +1,33 @@
 #menu {
     background-color: black;
+    color: #fff;
+    display: flex;
+}
+#menu ul {
+    list-style-type: none; 
+    margin-left: auto;
+}
+li {
+    display: inline;
+}
+li + li {
+    margin-left: 10px; 
 }
 .principal {
-    background-color: aqua;
+    background-color: #3a3a3a;
+    text-align: center;
+    color: #fff;
+}
+.banner {
+    text-align: center;
 }
 body {
     margin: 0;
     display: grid;
 }
+.button {
+    background-color: #555555;
+    margin: auto;
+
+} 
+
