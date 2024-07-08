@@ -6,7 +6,7 @@ Site em HTML e CSS para entrega final da trilha 1 do programa Descodificadas 202
 
 Site transcrito pra HTML e CSS a partir de um layout do Google sites.
 
-### site original:
+### Site original:
 
 https://sites.google.com/view/rebecaellen/p%C3%A1gina-inicial
 
