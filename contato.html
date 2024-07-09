@@ -10,8 +10,10 @@
     <div id="menu">
         <div class="container">
             <div class="logo">
-                <img src="./images/logo.png" alt="logo">
-                <span>FITHUB</span>
+                <a href="index.html">
+                    <img src="./images/logo.png" alt="logo">
+                    <span>FITHUB</span>
+                </a>
             </div>
             <ul>
                 <li>
@@ -49,6 +51,9 @@
                     <textarea name="mensagem" placeholder="Mensagem" required></textarea>
                     <button class="button" type="submit">Enviar</button>
                 </form>
+                <div class="mensagem">
+                    <p></p>
+                </div>
             </div>
         </div>
     </div>
@@ -78,4 +83,23 @@
         </div>
     </div>
 </body>
+<script>
+    const form = document.querySelector('form');
+    const nome = document.querySelector('input[name="nome"]');
+    const div = document.querySelector('.mensagem');
+    const mensagem = document.querySelector('.mensagem p');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        div.style.display = 'block';
+        mensagem.textContent = 'Obrigado ' + nome.value + '! Em breve retornaremos o contato.';
+        form.reset();
+
+
+        setTimeout(() => {
+            div.style.display = 'none';
+        }, 5000);
+
+    });
+</script>
 </html>
