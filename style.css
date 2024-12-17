@@ -430,3 +430,28 @@ li div.active {
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+.galeria-grid{
+    margin: 30px 0;
+}
+.galeria-grid img {
+    max-width: 100%;
+    display: block;
+}
+
+.galeria-grid figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.galeria-grid figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+.galeria-grid .grid {
+    column-count: 4;
+    column-gap: 10px;
+}
