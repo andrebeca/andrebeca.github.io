@@ -15,23 +15,29 @@
                     <span>FITHUB</span>
                 </a>
             </div>
-            <ul>
-                <li>
-                    <div class="">
-                        <a href="index.html">Página Inicial</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="">
-                        <a href="galeria.html">Galeria</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="active">
-                        <a href="">Contato</a>
-                    </div>
-                </li>
-            </ul>
+            <header id="header">
+                <nav class="nav">
+                    <button class="toggle-menu">
+                        <span></span>
+                    </button>
+                </nav>
+            </header>
+
+            <div id="menu-hamburguer" class="">
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Página Inicial</a>
+                        </li>
+                        <li>
+                            <a href="galeria.html">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 
@@ -83,6 +89,8 @@
         </div>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js" defer></script>
 <script>
     const form = document.querySelector('form');
     const nome = document.querySelector('input[name="nome"]');
